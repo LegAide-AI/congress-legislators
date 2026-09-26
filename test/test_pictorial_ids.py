@@ -1,8 +1,19 @@
 #!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
+
 """
 Unit tests for pictorial_ids.py.
 Run from root `congress-legislators` dir:
-`python test/test_pictorial_ids.py`
+`uv run test/test_pictorial_ids.py`
 """
 import sys
 import unittest

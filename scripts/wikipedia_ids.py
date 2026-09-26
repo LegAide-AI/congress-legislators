@@ -1,3 +1,14 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
+
 # Scans Wikipedia for pages using the CongBio and CongLinks
 # templates, which have Bioguide IDs. Updates the 'wikipedia'
 # ID field for matching Members of Congress, and for pages

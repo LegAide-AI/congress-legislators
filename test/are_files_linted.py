@@ -1,3 +1,8 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["rtyaml==1.0.0"]
+# ///
+
 # Check that each YAML file has been linted.
 
 import difflib
