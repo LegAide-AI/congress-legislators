@@ -1,4 +1,15 @@
 #!/usr/bin/python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+#   "SPARQLWrapper==2.0.0",
+# ]
+# ///
 
 import re
 import urllib.request
@@ -154,5 +165,4 @@ def run():
 
 if __name__ == '__main__':
   run()
-
 

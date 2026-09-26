@@ -1,7 +1,18 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
+
 # Converts the specified YAML file to an equivalent-ish CSV file
 # (on standard output).
 #
-# python export_csv.py ../legislators-current.yaml
+# uv run export_csv.py ../legislators-current.yaml
 
 import sys, csv
 from collections import OrderedDict
@@ -11,7 +22,7 @@ from utils import yaml_load
 def run():
 
 	if len(sys.argv) < 2:
-		print("Usage: python export_csv.py ../legislators-current.yaml > legislators-current.csv")
+		print("Usage: uv run export_csv.py ../legislators-current.yaml > legislators-current.csv")
 		sys.exit(0)
 
 	data = yaml_load(sys.argv[1])

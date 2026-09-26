@@ -441,26 +441,13 @@ These territories no longer exist.
 Helping us maintain the data
 ----------------------------
 
-You can just use the data directly without running any scripts. If you want to develop on and help maintain the data, our scripts are tested and developed on **Python 3.6**.
+You can just use the data directly without running any scripts. If you want to develop on and help maintain the data, install [uv](https://docs.astral.sh/uv/). The maintained scripts require **Python 3.11 or newer** and declare their pinned dependencies using [PEP 723 inline metadata](https://packaging.python.org/en/latest/specifications/inline-script-metadata/). `uv run` creates an isolated environment for each script and installs the declared dependencies automatically.
 
-(Recommended) First, create a virtualenv in the scripts directory:
+Most maintenance scripts retain their historical working-directory convention, so run them from the `scripts` directory. For example, to update House contact information:
 
 ```bash
 cd scripts
-virtualenv virt
-source virt/bin/activate
-```
-
-Install the requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-Try updating the House members contact information (mailing address, etc.):
-
-```bash
-python house_contacts.py
+uv run house_contacts.py
 ```
 
 Check whether and how the data has changed:
@@ -468,6 +455,20 @@ Check whether and how the data has changed:
 ```bash
 git diff ../*.yaml
 ```
+
+Run the CI-equivalent checks from the repository root:
+
+```bash
+uv run test/run.py
+```
+
+The committee sync cron should obtain its authoritative redundant manual-addendum key list with:
+
+```bash
+uv run scripts/redundant_addendum_keys.py
+```
+
+The command prints a JSON array. Only keys in that array are byte-for-data-equivalent to the current scraped entry and safe candidates for removal from `committee-membership-manual-addendum.yaml`.
 
 We run the following scripts periodically to scrape for new information and keep the data files up to date. The scripts do not take any command-line arguments.
 
@@ -505,7 +506,7 @@ if __name__ == '__main__':
   run()
 ```
 
-Every pull request will pass submitted scripts through an import, to catch exceptions, and through [pyflakes](https://pypi.python.org/pypi/pyflakes), to catch unused imports or local vars.
+Every pull request resolves each maintained script's inline metadata, passes submitted scripts through an import to catch exceptions, and runs [pyflakes](https://pypi.python.org/pypi/pyflakes) to catch unused imports or local vars.
 
 To contribute updates for district offices, edit the `legislators-district-offices.yaml` file by hand and submit a pull request. Updates should pass validation as defined by `scripts/office_validator.py`.
 

@@ -15,7 +15,7 @@ echo "Getting latest files from $SRC_BRANCH @ $HASH."
 git checkout FETCH_HEAD "*.yaml" scripts/alternate_bulk_formats.py scripts/utils.py
 
 # Generate CSV and JSON.
-(cd scripts/; python3 alternate_bulk_formats.py;)
+(cd scripts/; uv run alternate_bulk_formats.py;)
 
 # Commit the YAML, CSV, and JSON.
 # (Don't commit the other scripts files we checked out from

@@ -19,6 +19,15 @@ Globally:
 
 """
 
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "PyYAML==6.0.3",
+#   "rtyaml==1.0.0",
+#   "termcolor==3.3.0",
+# ]
+# ///
+
 import datetime
 import os.path
 import re

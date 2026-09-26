@@ -1,8 +1,13 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["rtyaml==1.0.0"]
+# ///
+
 # Update metadata fields like birthdays from
 # bioguide.congress.gov bulk data downloads.
 #
 # Usage:
-# python3 bioguide_xml.py path/to/BioguideProfiles.zip
+# uv run bioguide_xml.py path/to/BioguideProfiles.zip
 
 import sys
 import zipfile

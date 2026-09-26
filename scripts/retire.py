@@ -1,10 +1,20 @@
 #!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
 
 # Retire a Member of Congress. Updates the end date of the
 # Member's most recent term and moves him/her from the
 # current file to the historical file.
 #
-# python retire.py bioguideID termEndDate
+# uv run retire.py bioguideID termEndDate
 
 import sys
 import utils
@@ -13,7 +23,7 @@ import rtyaml
 def run():
 	if len(sys.argv) != 3:
 		print("Usage:")
-		print("python retire.py bioguideID termEndDate")
+		print("uv run retire.py bioguideID termEndDate")
 		sys.exit()
 
 	try:

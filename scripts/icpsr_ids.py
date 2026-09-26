@@ -1,4 +1,14 @@
- #!/usr/bin/env python
+#!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
 
 # gets ICPSR ID for every member
 
@@ -125,7 +135,7 @@ def run():
     # import os
 
     # for i in range(1,114):
-    #     os.system("python ICPSR_id.py --congress=" + str(i))
+    #     os.system("uv run ICPSR_id.py --congress=" + str(i))
 
 if __name__ == '__main__':
   run()
