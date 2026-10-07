@@ -8633,6 +8633,10 @@ HSBA:
   party: majority
   rank: 24
   bioguide: O000175
+- name: Everton Blair Jr.
+  party: minority
+  rank: 24
+  bioguide: B001328
 - name: Zachary Nunn
   party: majority
   rank: 25
@@ -12942,6 +12946,10 @@ HSFA16:
   party: majority
   rank: 5
   bioguide: R000600
+- name: Mark Pocan
+  party: minority
+  rank: 5
+  bioguide: P000607
 - name: James R. Baird
   party: majority
   rank: 6
@@ -13294,26 +13302,26 @@ HSFA07:
   party: majority
   rank: 2
   bioguide: S000522
-- name: Dina Titus
+- name: Greg Stanton
   party: minority
   rank: 2
-  bioguide: T000468
+  bioguide: S001211
 - name: Michael Lawler
   party: majority
   rank: 3
   bioguide: L000599
-- name: Sara Jacobs
+- name: Dina Titus
   party: minority
   rank: 3
-  bioguide: J000305
+  bioguide: T000468
 - name: Cory Mills
   party: majority
   rank: 4
   bioguide: M001216
-- name: Greg Stanton
+- name: Sara Jacobs
   party: minority
   rank: 4
-  bioguide: S001211
+  bioguide: J000305
 - name: Ryan Mackenzie
   party: majority
   rank: 5
@@ -13334,6 +13342,10 @@ HSFA07:
   party: majority
   rank: 7
   bioguide: F000484
+- name: Wesley Bell
+  party: minority
+  rank: 7
+  bioguide: B001324
 HSGO33:
 - name: Clay Higgins
   party: majority
@@ -13768,6 +13780,10 @@ HSVR03:
   party: majority
   rank: 5
   bioguide: K000399
+- name: Maggie Goodlander
+  party: minority
+  rank: 5
+  bioguide: G000604
 - name: Abraham J. Hamadeh
   party: majority
   rank: 6
@@ -15740,19 +15756,19 @@ HSFA13:
   rank: 1
   title: Chair
   bioguide: L000599
-- name: Brad Sherman
+- name: Jared Moskowitz
   party: minority
   rank: 1
   title: Ranking Member
-  bioguide: S000344
+  bioguide: M001217
 - name: Joe Wilson
   party: majority
   rank: 2
   bioguide: W000795
-- name: William R. Keating
+- name: Brad Sherman
   party: minority
   rank: 2
-  bioguide: K000375
+  bioguide: S000344
 - name: Darrell Issa
   party: majority
   rank: 3
@@ -15773,10 +15789,18 @@ HSFA13:
   party: majority
   rank: 5
   bioguide: J000304
+- name: William R. Keating
+  party: minority
+  rank: 5
+  bioguide: K000375
 - name: Thomas H. Kean, Jr.
   party: majority
   rank: 6
   bioguide: K000398
+- name: Bradley Scott Schneider
+  party: minority
+  rank: 6
+  bioguide: S001190
 - name: Ryan K. Zinke
   party: majority
   rank: 7
@@ -16083,11 +16107,11 @@ HSFA17:
   rank: 1
   title: Chair
   bioguide: M001216
-- name: Jared Moskowitz
+- name: Jonathan L. Jackson
   party: minority
   rank: 1
   title: Ranking Member
-  bioguide: M001217
+  bioguide: J000309
 - name: Scott Perry
   party: majority
   rank: 2
@@ -16100,18 +16124,18 @@ HSFA17:
   party: majority
   rank: 3
   bioguide: I000056
-- name: Bradley Scott Schneider
+- name: Madeleine Dean
   party: minority
   rank: 3
-  bioguide: S001190
+  bioguide: D000631
 - name: Ronny Jackson
   party: majority
   rank: 4
   bioguide: J000304
-- name: Madeleine Dean
+- name: Debbie Wasserman Schultz
   party: minority
   rank: 4
-  bioguide: D000631
+  bioguide: W000797
 - name: Warren Davidson
   party: majority
   rank: 5
@@ -16306,6 +16330,10 @@ HSVR11:
   party: majority
   rank: 2
   bioguide: M000194
+- name: Maggie Goodlander
+  party: minority
+  rank: 2
+  bioguide: G000604
 - name: Morgan Luttrell
   party: majority
   rank: 3
