@@ -1,10 +1,20 @@
 #!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
 
 # "Un-retire" a Member of Congress: Move a Member of Congress
 # from the legislators-historical file to the legislators-current file
 # and give the Member a new term.
 #
-# python unretire.py bioguideID
+# uv run untire.py bioguideID
 
 import sys
 import rtyaml
@@ -15,7 +25,7 @@ def run():
 
 	if len(sys.argv) != 2:
 		print("Usage:")
-		print("python untire.py bioguideID")
+		print("uv run untire.py bioguideID")
 		sys.exit()
 
 	print("Loading current YAML...")

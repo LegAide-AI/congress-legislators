@@ -1,4 +1,14 @@
 #!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
 
 import csv
 import json
@@ -15,7 +25,7 @@ from utils import load_data, mkdir_p, save_data, parse_date
 #  --congress: do *only* updates for legislators serving in specific congress
 #
 # example:
-#  python pictorial_ids.py --congress=118
+#  uv run pictorial_ids.py --congress=118
 
 
 def run():

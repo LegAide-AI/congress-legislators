@@ -1,9 +1,20 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
+
 # Just loads and saves each .yaml file to normalize serialization syntax.
 #
-# python lint.py
+# uv run lint.py
 # ... will lint every .yaml file in the data directory.
 #
-# python lint.py file1.yaml file2.yaml ...
+# uv run lint.py file1.yaml file2.yaml ...
 # ... will lint the specified files.
 
 import glob, sys

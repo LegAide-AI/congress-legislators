@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v uv >/dev/null 2>&1; then
+  echo "Installing uv..."
+  curl --proto '=https' --tlsv1.2 -LsSf https://astral.sh/uv/0.12.9/install.sh | sh
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
+uv --version

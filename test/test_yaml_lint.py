@@ -1,3 +1,8 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["rtyaml==1.0.0"]
+# ///
+
 """Tests for comments in manually maintained YAML addenda."""
 
 import subprocess

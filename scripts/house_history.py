@@ -1,4 +1,15 @@
 #!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "requests==2.34.2",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
 
 # Stores a house_history ID for all legislators that don't yet
 # have one, by scraping history.house.gov.

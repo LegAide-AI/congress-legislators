@@ -1,4 +1,15 @@
 #!/usr/bin/env python
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "lxml==6.1.3",
+#   "nltk==3.10.3",
+#   "PyYAML==6.0.3",
+#   "pytz==2026.4",
+#   "rtyaml==1.0.0",
+#   "scrapelib==0.10.1",
+# ]
+# ///
 
 # gets fundamental information for every member with a bioguide ID:
 # first name, nickname, middle name, last name, name suffix
